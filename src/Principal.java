@@ -37,7 +37,7 @@ public class Principal {
                     }
 
                     if (opcion > 9) {
-                        System.out.println("Opcion no valida");
+                        System.out.println("Opción no valida");
                         continue;
                     }
 
