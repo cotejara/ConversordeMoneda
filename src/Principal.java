@@ -94,7 +94,6 @@ public class Principal {
                             break;
                         default:
                             System.out.println("Opcion no valida");
-                            continue;
                     }
 
                 } catch (NumberFormatException e) {
