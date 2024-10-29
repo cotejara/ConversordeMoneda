@@ -1,4 +1,4 @@
-import java.io.IOException;
+
 import java.util.Scanner;
 
 public class Principal {
@@ -7,7 +7,7 @@ public class Principal {
         Scanner lectura = new Scanner( System.in);
         ConsultaMoneda consulta = new ConsultaMoneda();
         int opcion = 0;
-        Double monto;
+        double monto;
         Moneda moneda;
         String Menu = """
                 *****************************************
@@ -38,7 +38,7 @@ public class Principal {
 
                     if (opcion > 9) {
                         System.out.println("Opcion no valida");
-                        break;
+                        continue;
                     }
 
                     System.out.println("Ingrese monto a convertir:");
@@ -92,15 +92,10 @@ public class Principal {
                             System.out.println("El valor " + monto + " [CLP] corresponde al valor final de =>>> "
                                     + consulta.convertirMonto(moneda.conversion_rate(), monto) + " USD"  );
                             break;
-                        case 9:
-                            break;
                         default:
                             System.out.println("Opcion no valida");
-                            break;
+                            continue;
                     }
-
-                    //GeneradorDeArchivo generador = new GeneradorDeArchivo();
-                    //generador.guardarJson(pelicula);
 
                 } catch (NumberFormatException e) {
                     System.out.println("Moneda no encontrado:" + e.getMessage());
