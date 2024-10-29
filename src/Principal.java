@@ -10,7 +10,6 @@ public class Principal {
         double monto;
         Moneda moneda;
         String Menu = """
-                *****************************************
                 *******    CONVERSOR DE MONEDAS   *******
                 1) Dolar =>> Peso Argentino
                 2) Peso Argentino =>> Dolar
